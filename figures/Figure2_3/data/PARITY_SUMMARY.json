@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "profiles": 113,
+  "curve_sample_rows": 45313,
+  "max_absolute_CRS_error": 0.0,
+  "max_relative_CRS_error": 0.0,
+  "classification_runs": 0,
+  "refits": 0,
+  "ranking_runs": 0,
+  "selected_domain_extrapolations": 0
+}

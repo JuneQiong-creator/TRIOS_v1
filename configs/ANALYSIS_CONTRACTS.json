@@ -1,0 +1,87 @@
+{
+  "hb": {
+    "authority": "20260918 human-approved RAW50 exact-log ORIGINAL5",
+    "K_ref": 7,
+    "components": [
+      "S_BW",
+      "S_tau",
+      "S_match",
+      "P_fit",
+      "I_SF"
+    ],
+    "perturbation": "method-native frozen-fit retained-cohort domain reselection and CRS rescoring; native projection",
+    "selected_domains_uM": {
+      "5FU": 50,
+      "CARBO": 64,
+      "CARBO_A": 64,
+      "CDDP": 40,
+      "CDDP_A": 25,
+      "ETO": 50
+    },
+    "regimen_K_MS": {
+      "5FU": 3,
+      "CARBO": 4,
+      "CARBO_A": 4,
+      "CDDP": 3,
+      "CDDP_A": 6,
+      "ETO": 5
+    },
+    "common_K_MS": 6
+  },
+  "simulation_pipeline": {
+    "authority": "TRIOS_PHASEC_E3_Q50_81METHOD_AUC_COMPLETION_v1.0_20260918",
+    "pipelines": 81,
+    "intended_cohorts": 2550,
+    "internal_branch": "Q50/median only",
+    "weighting": "original factor-balanced; not equal-weight cohort means",
+    "perturbation": "frozen native TRIOS definition and conventional classifier-only; do not globally replace"
+  },
+  "prospective": {
+    "authority": "TRIOS_E4_EXTENSION_MANUSCRIPT_SOURCE_FREEZE_v1.1_20261001",
+    "current_stage1_rule": "minimum tested H with overall A_valid >= 0.95",
+    "selected_H_uM": 150,
+    "H250_reference": "same-design prospective reconstructed states, not E1 control",
+    "fidelity_role": "descriptive continuous reference quantities; no current PASS/FAIL selection gate",
+    "stage2_J": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rounded_J5": "separate sensitivity",
+    "denominators": [
+      "all-intended",
+      "own-valid",
+      "common-valid"
+    ]
+  },
+  "ccle": {
+    "authority": "CCLE_EXPERIMENT_A_FIXED_SCORE_ORIGINAL5_20260928_v1",
+    "FULL_tasks": 567,
+    "B100_tasks": 56700,
+    "datasets": 7,
+    "pipelines": 81,
+    "subsets_per_dataset": 100,
+    "n_subset": 18,
+    "domain_policy": "fixed full-source D2 domain",
+    "fit_score_policy": "frozen profile-local fits and native scalar scores",
+    "perturbation": "fixed-score classifier-only LOO for all methods",
+    "components": [
+      "S_BW",
+      "S_tau",
+      "S_match",
+      "P_fit",
+      "I_SF"
+    ],
+    "seed": 20260810,
+    "classifier_starts": 100,
+    "tolerance": 1e-12,
+    "AUC_interval_uM": [
+      0.0025,
+      8.0
+    ],
+    "cross_dataset_rank": "none; seven separate datasets",
+    "matched_ablations": "excluded/cancelled"
+  }
+}

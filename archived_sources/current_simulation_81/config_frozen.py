@@ -1,0 +1,39 @@
+from pathlib import Path
+
+PROJECT_ROOT = Path(r"SOURCE_PROJECT")
+OUTPUT_ROOT = PROJECT_ROOT / "04_RESULTS" / "HB_PDO_LAYER1_MODEL_OPTIMIZATION_REPLICATE_LEVEL_v1.1"
+FINAL_ZIP = PROJECT_ROOT / "04_RESULTS" / "HB_PDO_LAYER1_MODEL_OPTIMIZATION_REPLICATE_LEVEL_v1.1_complete_delivery.zip"
+FINAL_SIDECAR = PROJECT_ROOT / "04_RESULTS" / "HB_PDO_LAYER1_MODEL_OPTIMIZATION_REPLICATE_LEVEL_v1.1_FINAL_ZIP_SHA256.txt"
+
+INSTRUCTION = Path(r"OMITTED_HOST_PATH/CODEX_HB_PDO_Layer1_Model_Optimization_v1.1_REPLICATE_LEVEL_EXECUTE.md")
+PLAN = Path(r"OMITTED_HOST_PATH/HB_PDO_Three_Layer_Uncertainty_Optimization_Research_Plan_v1.1_Replicate_Level_Fitting.pdf")
+PLAN_SHA256 = "B06952E7CEB970C2DC5A0C0E496DE1AC60184D270D6C6906794AB720D7757195"
+SOURCE_ARCHIVE = PROJECT_ROOT / "5fu_pilot" / "5FU_6Regimen_WeibullFixedBoundAudit_ETOP008SupportConsistency_complete_delivery_final.zip"
+SOURCE_ARCHIVE_SHA256 = "7BF4AA0C3892A77C2FA7CC26DB999D3CAF3A848047D1563643B0254778C8B132"
+
+REGIMENS = ["5FU", "CARBO", "CDDP", "ETO", "CARBO_A", "CDDP_A"]
+REGIMEN_PROFILE_COUNTS = {"5FU": 22, "CARBO": 24, "CDDP": 18, "ETO": 18, "CARBO_A": 14, "CDDP_A": 18}
+SOURCE_MEMBERS = {
+    "5FU": "inputs/day1_5fu_codex_package/5FU_well_level_verified.csv",
+    "CARBO": "results/Carbo/Carbo_well_level_verified.csv",
+    "CDDP": "results/CDDP/CDDP_well_level_verified.csv",
+    "ETO": "results/ETO/ETO_well_level_verified.csv",
+    "CARBO_A": "results/CarboA/CarboA_well_level_verified.csv",
+    "CDDP_A": "results/CDDPA/CDDPA_well_level_verified.csv",
+}
+
+MODELS = ["RAW_EMAX", "RAW_HILL", "RAW_LOGISTIC", "RAW_WEIBULL", "MONOTONE_SPLINE"]
+PARAMETRIC_MODELS = MODELS[:4]
+METRICS = ["IC50", "EC50_0_50", "EMAX50", "AUC0_50"]
+CLASSIFIERS = ["KMEANS", "WARD", "TIED_GMM", "ONESD", "TERTILES", "JENKS"]
+
+MASTER_SEED = 20260810
+PARAMETRIC_STARTS = 64
+CLASSIFIER_STARTS = 100
+FIT_MAX_NFEV = 50000
+FIT_TOL = 1e-10
+CLASSIFICATION_TOL = 1e-12
+NEAR_TIE = 0.01
+SPLINE_LAM_GRID = [10.0 ** (-4 + 0.5 * i) for i in range(17)]
+
+PYDEPS = PROJECT_ROOT / "tmp" / "layer1_v11_pydeps"

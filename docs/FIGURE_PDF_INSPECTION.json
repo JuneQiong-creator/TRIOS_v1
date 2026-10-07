@@ -1,0 +1,148 @@
+[
+  {
+    "file": "Figure1/figure1.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        402.4909973144531,
+        397.5090026855469
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "file": "Figure2_3/Figure2_HB.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        385.5118103027344,
+        475.20001220703125
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "file": "Figure2_3/Figure3_HB.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        385.5118103027344,
+        525.5999755859375
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "file": "Figure4/Figure4_Simulation.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        385.5118103027344,
+        462.0472412109375
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "file": "Figure5/Figure5_Prospective_Assay.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        385.5118103027344,
+        467.7165222167969
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "file": "Figure6/Figure6_Structural_Stress.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        385.5118103027344,
+        496.06298828125
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "file": "Figure7_8/Figure7_CCLE_Transport_Molecular.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        385.5118103027344,
+        442.2047119140625
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true
+    ]
+  },
+  {
+    "file": "Figure7_8/Figure8_CCLE_Comparative.pdf",
+    "pages": 1,
+    "page_dimensions_pt": [
+      [
+        0.0,
+        0.0,
+        385.5118103027344,
+        419.5275573730469
+      ]
+    ],
+    "embedded_fonts": [
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+]

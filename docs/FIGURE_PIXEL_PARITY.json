@@ -1,0 +1,72 @@
+[
+  {
+    "figure": "Figure2_HB.png",
+    "original_source_locator": "05_MANUSCRIPT/BIOSTATISTICS/figures/HB_Figures_2_3_v1_0_20260928/Figure2_HB.png",
+    "dimensions_px": [
+      1606,
+      1980
+    ],
+    "pixel_identical_to_accepted": true,
+    "output_sha256": "b762054b45880c85b25468a94e08be91f13f196a017d6b3f7f8a539ee9d99bb8"
+  },
+  {
+    "figure": "Figure3_HB.png",
+    "original_source_locator": "05_MANUSCRIPT/BIOSTATISTICS/figures/HB_Figures_2_3_v1_0_20260928/Figure3_HB.png",
+    "dimensions_px": [
+      1606,
+      2190
+    ],
+    "pixel_identical_to_accepted": true,
+    "output_sha256": "6a59a3fc641c8a5dfae36a35171ef31ed4b2c802601cb73f26d46255c31883b2"
+  },
+  {
+    "figure": "Figure4_Simulation.png",
+    "original_source_locator": "05_MANUSCRIPT/BIOSTATISTICS/figures/Figure4_Simulation_v1_20261006/Figure4_Simulation.png",
+    "dimensions_px": [
+      1606,
+      1925
+    ],
+    "pixel_identical_to_accepted": true,
+    "output_sha256": "e163d7d4733b29e1fc1f286e61302857434710fadcb07830136a40d59de7031c"
+  },
+  {
+    "figure": "Figure5_Prospective_Assay.png",
+    "original_source_locator": "05_MANUSCRIPT/BIOSTATISTICS/figures/Figure5_Prospective_Assay/Figure5_Prospective_Assay.png",
+    "dimensions_px": [
+      1606,
+      1948
+    ],
+    "pixel_identical_to_accepted": true,
+    "output_sha256": "89403574f4a4c87dd8b6f2206c35bcf3c894878076eefb681e266ca2a693fdcd"
+  },
+  {
+    "figure": "Figure6_Structural_Stress.png",
+    "original_source_locator": "05_MANUSCRIPT/BIOSTATISTICS/figures/Figure6_Structural_Stress/Figure6_Structural_Stress.png",
+    "dimensions_px": [
+      1606,
+      2066
+    ],
+    "pixel_identical_to_accepted": true,
+    "output_sha256": "830a0804c0048242668e10e4826fc8cd984b401c69511caa9f2224555eb4cab1"
+  },
+  {
+    "figure": "Figure7_CCLE_Transport_Molecular.png",
+    "original_source_locator": "05_MANUSCRIPT/BIOSTATISTICS/figures/Figure7_8_CCLE_v1_20261006/Figure7_CCLE_Transport_Molecular.png",
+    "dimensions_px": [
+      1606,
+      1842
+    ],
+    "pixel_identical_to_accepted": true,
+    "output_sha256": "57e543f17fcb7efb310dc69f503ec00bc593bd09e5d0fe189e0ee01e299c01a9"
+  },
+  {
+    "figure": "Figure8_CCLE_Comparative.png",
+    "original_source_locator": "05_MANUSCRIPT/BIOSTATISTICS/figures/Figure7_8_CCLE_v1_20261006/Figure8_CCLE_Comparative.png",
+    "dimensions_px": [
+      1606,
+      1748
+    ],
+    "pixel_identical_to_accepted": true,
+    "output_sha256": "87795aa6cf888079314d920b3dfc8c24f2374ca673031187689a199d5645cc2f"
+  }
+]

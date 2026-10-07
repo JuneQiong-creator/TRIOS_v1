@@ -1,0 +1,102 @@
+\begin{tikzpicture}[
+  x=1pt,y=-1pt,
+  every node/.style={font=\fontsize{7.5}{8.5}\selectfont,
+    align=center,text=black,outer sep=0.4pt},
+  process/.style={rectangle,draw=black,fill=black!5,line width=0.45pt,
+    text width=205pt,minimum height=20pt,inner xsep=3pt,inner ysep=2pt},
+  decision/.style={diamond,aspect=7,draw=black,fill=white,
+    line width=0.45pt,text width=79pt,minimum height=27pt,inner sep=0.3pt},
+  failure/.style={rectangle,draw=black!65,fill=white,line width=0.35pt,
+    densely dashed,
+    text width=130pt,inner xsep=3pt,inner ysep=4pt},
+  development/.style={rectangle,draw=black!65,densely dashed,
+    line width=0.35pt,fill=white,align=center,text width=130pt,
+    minimum height=82pt,inner xsep=3pt,inner ysep=3pt},
+  evidence/.style={rectangle,draw=black,fill=black!5,line width=0.45pt,
+    inner xsep=3pt,inner ysep=3pt,font=\fontsize{7.3}{8.3}\selectfont},
+  arrow/.style={-{Latex[length=3.5pt,width=2.8pt]},black,line width=0.45pt},
+  devbranch/.style={arrow,densely dashed},
+  branchlabel/.style={fill=white,inner sep=0.5pt,
+    font=\fontsize{7.0}{8.0}\selectfont},
+  panel/.style={anchor=north west,inner sep=0pt,
+    font=\bfseries\fontsize{8.5}{10}\selectfont}
+]
+\def\TRIOSMainGap{7pt}
+\path (0,-10) rectangle (380,361);
+\node[panel] at (0,-10) {(a)};
+
+\node[process] (input) at (113,10)
+  {\textbf{Observed multidose responses}\\
+   \(\mathcal Y_i=\{(d_{ij},Y_{ij\ell})\}\)};
+\node[process,anchor=north] (reconstruction) at ([yshift=-\TRIOSMainGap]input.south)
+  {\textbf{Shape-constrained response reconstruction}\\
+   \(\widehat f_i(d)\)};
+\node[process,anchor=north] (stage) at ([yshift=-\TRIOSMainGap]reconstruction.south)
+  {\textbf{Candidate-domain evaluation}\\
+   \(u\in\mathcal C,\quad A_i(u),\quad {\rm TRG}_i(u;\rho)\)};
+\node[anchor=west,font=\bfseries\fontsize{7.5}{9}\selectfont] at ([xshift=117pt]stage.center)
+  {How far?};
+\node[decision,anchor=north] (stagepass) at ([yshift=-\TRIOSMainGap]stage.south)
+  {Adequate domain\\exists?};
+\node[failure,minimum height=22pt] (transportfail) at ([xshift=197pt]stagepass.center)
+  {Transport no-pass};
+\node[process,anchor=north] (domain) at ([yshift=-\TRIOSMainGap]stagepass.south)
+  {Retain earliest adequate \(D\)};
+\node[process,anchor=north] (nodes) at ([yshift=-\TRIOSMainGap]domain.south)
+  {\textbf{Exact-log finite-node representation}\\\(d_j(D,K)\)};
+
+\node[development] (development) at ([xshift=197pt]nodes.center)
+  {\textbf{How much resolution?}\\[2pt]
+   finite-node resolution \(K\)\\
+   \(\downarrow\)\\
+   \(F_{{\rm score},r}(K),\quad F_{{\rm strata},r}(K)\)\\
+   \(\downarrow\)\\
+   \(K_{\rm MS}\)\\
+   development /\\information-efficiency analysis};
+
+\node[process,anchor=north] (crs) at ([yshift=-\TRIOSMainGap]nodes.south)
+  {\textbf{Finite-node response integration}\\
+   \(x_i={\rm CRS}_{D,K_{\rm ref}}(\widehat f_i)\)};
+\node[decision,anchor=north] (legal) at ([yshift=-\TRIOSMainGap]crs.south)
+  {Admissible ordered\\partition?};
+\node[failure,minimum height=22pt] (partitionfail) at ([xshift=197pt]legal.center)
+  {No admissible\\three-stratum partition};
+\node[process,anchor=north] (partition) at ([yshift=-\TRIOSMainGap]legal.south)
+  {\textbf{Admissible Breaks partition}};
+\node[process,anchor=north] (output) at ([yshift=-\TRIOSMainGap]partition.south)
+  {\makebox[62pt][c]{\shortstack[c]{\(L\)\\Low}}%
+   \makebox[62pt][c]{\shortstack[c]{\(I\)\\Intermediate}}%
+   \makebox[62pt][c]{\shortstack[c]{\(H\)\\High}}};
+
+\draw[arrow] (input.south) -- (reconstruction.north);
+\draw[arrow] (reconstruction.south) -- (stage.north);
+\draw[arrow] (stage.south) -- (stagepass.north);
+\draw[arrow] (stagepass.south) -- node[branchlabel,right=2pt] {yes} (domain.north);
+\draw[arrow] (stagepass.east) -- node[branchlabel,above] {no} (transportfail.west);
+\draw[arrow] (domain.south) -- (nodes.north);
+\draw[arrow] (nodes.south) -- node[branchlabel,right=2pt]
+  {reference resolution \(K_{\rm ref}\)} (crs.north);
+\draw[devbranch] (nodes.east) -- (development.west);
+\draw[arrow] (crs.south) -- (legal.north);
+\draw[arrow] (legal.south) -- node[branchlabel,right=2pt] {yes} (partition.north);
+\draw[arrow] (legal.east) -- node[branchlabel,above] {no} (partitionfail.west);
+\draw[arrow] (partition.south) -- (output.north);
+
+\draw[black!30,line width=0.3pt] (0,290) -- (380,290);
+\node[panel] at (0,296) {(b)};
+\node[evidence,text width=98pt,minimum height=25pt] (hb) at (52,329)
+  {\textbf{HB-PDO source development}\\\textbf{and internal evaluation}};
+\node[evidence,text width=98pt,minimum height=42pt] (frozen) at (170,329)
+  {\textbf{Frozen TRIOS specification}\\
+   fixed domain-selection rule\\reference resolution\\scoring and partition rules};
+\node[font=\fontsize{7.0}{8.0}\selectfont] at (170,297)
+  {no subsequent retuning};
+\node[evidence,text width=130pt,minimum height=25pt] (simulation) at (312,311)
+  {\textbf{Truth-known simulation}\\\textbf{and numerical validation}};
+\node[evidence,text width=130pt,minimum height=25pt] (ccle) at (312,347)
+  {\textbf{External CCLE generalization}\\\textbf{and comparative evaluation}};
+\draw[arrow] (hb.east) -- (frozen.west);
+\draw[black,line width=0.45pt] (frozen.east) -- (235,329);
+\draw[arrow] (235,329) |- (simulation.west);
+\draw[arrow] (235,329) |- (ccle.west);
+\end{tikzpicture}

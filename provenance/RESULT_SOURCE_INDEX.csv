@@ -1,0 +1,7 @@
+figure,public_tables,plot_entry,authority,scope,notes
+1,figures/Figure1/figure1_trios_framework.tex,figures/Figure1/figure1.tex,current working method schematic,schematic only,no scientific data
+2/3,figures/Figure2_3/data/,figures/Figure2_3/plot_hb_figures.py,approved HB RAW50 ORIGINAL5 plus independent final-domain fidelity,113 profiles; six regimens; 81 pipelines,historical common-D50 K5 is not current; current common K6
+4,figures/Figure4/data/,figures/Figure4/plot_figure4.py,current exact-log E1/E2 and Q50 81-method E3,A/B equal-weight cohort means; C original factor-balanced summaries,no old fixed-p/61-method substitute
+5,figures/Figure5/data/,figures/Figure5/plot_figure5.py,accepted prospective extension; v1.1 manuscript current metadata,all-intended / own-valid / common-valid retained; stored paired CI only,historical figure extract numeric values unchanged; deprecated decision metadata omitted; current rule in configs
+6,figures/Figure6/data/,figures/Figure6/plot_figure6.py,current exact-log structural-stress summaries,12 overall complete-pipeline scenarios; original factor weights,historical external generator snapshot remains UNRESOLVED
+7/8,figures/Figure7_8/data/,figures/Figure7_8/plot_figures7_8.py,frozen full-source transport/molecular plus current fixed-representation comparison,seven datasets; FULL and B100 aggregates,molecular data-source authority separate; no QSC/native comparative results

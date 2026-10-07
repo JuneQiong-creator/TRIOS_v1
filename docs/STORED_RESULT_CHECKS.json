@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "files": 171,
+  "scope": "Listed release payload bytes only; manifest excludes itself and generated outputs",
+  "current_CCLE_full_tasks": 567,
+  "current_CCLE_B100_tasks": 56700,
+  "current_pipeline_count": 81,
+  "E3_source": "Current Q50 81-method summary only",
+  "verification": "Stored fields, declared contract and regression anchors; no independent scientific reproduction"
+}

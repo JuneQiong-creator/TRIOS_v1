@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checks": {
+    "protected_originals": [
+      {
+        "set": "ORIGINAL_INPUT_PROTECTION.json",
+        "checked": 137,
+        "changed": 0
+      },
+      {
+        "set": "MANUSCRIPT_PROTECTION.json",
+        "checked": 243,
+        "changed": 0
+      }
+    ],
+    "source_bindings": 137,
+    "verbatim_computational_functions": 15,
+    "python_syntax_files": 83,
+    "credential_and_host_path_findings": 0,
+    "raw_HB_rows": 1832,
+    "raw_HB_profiles": 114,
+    "eligible_HB_rows": 1817,
+    "eligible_HB_profiles": 113,
+    "HB_measurement_column_allowlist": [
+      "regimen",
+      "PDO_ID",
+      "dose_uM",
+      "replicate_ID",
+      "response_inhibition",
+      "viability_ratio",
+      "QC_status",
+      "dose_unit"
+    ],
+    "largest_payload_bytes": 3842707
+  },
+  "scope": "Payload allowlist, byte/source/function integrity and syntax; not a full scientific evaluation",
+  "third_party_raw_CCLE": "Not mirrored; no exact legacy-file redistribution permission confirmed",
+  "project_license": "AUTHOR_CONFIRMATION_PENDING"
+}

@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "trios-release"
+version = "0.1.0"
+description = "Scoped TRIOS reproduction materials"
+requires-python = ">=3.13,<3.14"
+dependencies = ["numpy==2.4.0", "scipy==1.16.3", "pandas==2.3.3", "pygam==0.10.1"]
+[tool.setuptools.packages.find]
+where = ["src"]

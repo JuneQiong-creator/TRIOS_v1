@@ -1,0 +1,20 @@
+layer,quantity,count,denominator,proportion,detail
+INTENDED,all_cases,10200,10200,1,All 34 patterns × three separations × 20 blocks × five families; no post-readout exclusions
+MUTUALLY_EXCLUSIVE_FINITE_LAYER,MISSING_STATES,2040,10200,0.20000000000000001,Mutually exclusive intended-case classification
+MUTUALLY_EXCLUSIVE_FINITE_LAYER,UNCERTIFIED_FINITE_NUMERICAL_LAYER,8160,10200,0.80000000000000004,Mutually exclusive intended-case classification
+EXACT_RATIONAL_NUMERIC,reference_eligible,8160,10200,0.80000000000000004,Certification layer stated explicitly; violations restricted to certified cases
+EXACT_RATIONAL_NUMERIC,reference_no_pass,0,10200,0,Certification layer stated explicitly; violations restricted to certified cases
+EXACT_RATIONAL_NUMERIC,p6_certified_numeric,0,10200,0,Certification layer stated explicitly; violations restricted to certified cases
+EXACT_RATIONAL_NUMERIC,c2_certified_numeric,0,10200,0,Certification layer stated explicitly; violations restricted to certified cases
+STRICT_REAL_FUNCTION,p6_certified_real,0,10200,0,Certification layer stated explicitly; violations restricted to certified cases
+STRICT_REAL_FUNCTION,c2_certified_real,0,10200,0,Certification layer stated explicitly; violations restricted to certified cases
+EXACT_RATIONAL_NUMERIC,p6_conclusion_violation,0,0,NA,Certified set is empty; conclusion-violation proportion is undefined (0/0).
+EXACT_RATIONAL_NUMERIC,c2_conclusion_violation,0,0,NA,Certified set is empty; conclusion-violation proportion is undefined (0/0).
+EMPIRICAL_FINITE_NUMERICAL_LAYER,endpoint_comparable,8160,10200,0.80000000000000004,"Missing states and invalid outputs excluded from comparable denominator, still retained in intended inventory"
+EMPIRICAL_FINITE_NUMERICAL_LAYER,endpoint_retained,6525,8160,0.79963235294117652,Empirical retention independent of certification; partition uses each own selected endpoint
+EMPIRICAL_FINITE_NUMERICAL_LAYER,partition_comparable,8156,10200,0.79960784313725486,"Missing states and invalid outputs excluded from comparable denominator, still retained in intended inventory"
+EMPIRICAL_FINITE_NUMERICAL_LAYER,partition_retained,3429,8156,0.42042667974497305,Empirical retention independent of certification; partition uses each own selected endpoint
+STRICT_REAL_FUNCTION,unresolved_function_or_ideal_node_bridge,8160,10200,0.80000000000000004,No outward enclosure for all frozen functions and ideal exact-log node coordinates; no real certificate claimed
+MULTILABEL_PREMISE_FAILURE,EARLIER_RELAXED_STRICT_FAILURE_NOT_CERTIFIED,4873,10200,0.47774509803921567,Overlapping categories must not be added
+MULTILABEL_PREMISE_FAILURE,MISSING_FROZEN_NP_PCHIP_SHAPE_KNOT_ORDINATES,2040,10200,0.20000000000000001,Overlapping categories must not be added
+MULTILABEL_PREMISE_FAILURE,TIGHTENED_PASS_NOT_CERTIFIED,8160,10200,0.80000000000000004,Overlapping categories must not be added

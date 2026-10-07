@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "regimen": "5FU",
+  "profiles": 22,
+  "selected_domain_uM": 50.0,
+  "K": 7,
+  "score_max_absolute_difference": 0.0,
+  "partition_labels_match": true,
+  "tau1": 0.40523175136344197,
+  "tau2": 0.5880911622243128,
+  "stage_input": "Frozen profile-level candidate quantities",
+  "fit_input": "Original frozen spline coefficients/status; no refit",
+  "ab_version": "Historical HB binary64 SSE tuple, source hash 7eb37341623b10b4...",
+  "scope": "One existing full-data regimen path; no benchmark, LOO, fitting or complete raw-data recomputation"
+}

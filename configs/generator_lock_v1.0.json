@@ -1,0 +1,64 @@
+{
+  "version": "v1.0",
+  "master_seed": 42,
+  "namespace": "TRIOS_PHASEC_SIM_E1_CALIBRATION_V1",
+  "B_CAL": 200,
+  "dose_grid": [
+    0.0,
+    1.0,
+    2.509901442183411,
+    6.299605249474365,
+    15.811388300841896,
+    39.68502629920498,
+    99.6055047414612,
+    250.0
+  ],
+  "families": {
+    "HILL": {
+      "center": 8.20309058556316,
+      "deltas": {
+        "weak": 2.0,
+        "moderate": 3.0,
+        "strong": 4.0
+      }
+    },
+    "EMAX": {
+      "center": 8.426107732068639,
+      "deltas": {
+        "weak": 2.0,
+        "moderate": 2.95,
+        "strong": 3.85
+      }
+    },
+    "LOGISTIC": {
+      "center": 7.671031343341807,
+      "deltas": {
+        "weak": 1.95,
+        "moderate": 2.9,
+        "strong": 4.1
+      }
+    },
+    "WEIBULL": {
+      "center": 7.36850711384293,
+      "deltas": {
+        "weak": 2.05,
+        "moderate": 3.05,
+        "strong": 4.1
+      }
+    },
+    "NP_PCHIP": {
+      "center": 8.539879791377297,
+      "deltas": {
+        "weak": 2.0,
+        "moderate": 3.05,
+        "strong": 3.95
+      }
+    }
+  },
+  "hill_D_obs_targets": {
+    "weak": 1.7230740060882686,
+    "moderate": 3.6561448307776825,
+    "strong": 5.805785399811227
+  },
+  "status": "PASS"
+}
